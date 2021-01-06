@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Generic - Solid State by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="./images/favicon.png" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+		<!-- Wrapper -->
+		<section id="wrapper" style="text-transform: none;">
+			<header>
+				<div class="inner">
+					<h2>Telemetry Interface (For UBC Solar Team)</h2>
+					<a class="special" href="https://ubcsolar-telemetry-interface.herokuapp.com/">Demo</a>
+					<a class="special" href="https://github.com/UBC-Solar/Telemetry-Interface">Source Code</a>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">Introduction</h3>
+					<p>The project will be used to monitor the real-time data read from the solar car during the race. Give the team a better understanding
+						of the car condition by providing information such as battery, motor temperature etc. My role in this project is to make sure the
+						data are stored and can be fetched properly. Technologies implemented are: NodeJS(Express), SocketIO, MongoDB.
+					</p>
+
+					<h3 class="major">Spotlight</h3>
+					<p>
+						1. User could choose to fetch a specific data or all available data  recorded at a specific time. <br>
+						2. Ideally the real location can be monitored by the interface.
+					</p>
+
+					<h3 class="major">Lessons Learned</h3>
+					<p>
+						One of the challenge of the project is the interaction between frontend and backend. After user input 
+						the information needed to do the fetching, a new page will be rendered. Which cause the SocketIO to be disconnected.
+						Unfortunately I couldn't figure out a way to make it work for multiple pages, I am sure there is a way to do that and it
+						could be a challenge for future me when I am more experienced. What I did instead is to leverage the localStorage API.
+						Store the data locally via SocketIO before switching pages. I feel like I am "cheating" a little bit, but the point is that 
+						it worked perfect as I expected.Still, it is a fantastic learning opportunity for me to understand how more complex website works.
+					</p>
+
+					<a class="special" href="./index.html">Go Back</a>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="inner">
+				<ul class="contact">
+					<li class="icon solid fa-home">
+						2075 West Mall, Ponderosa Commons<br />
+						Unit 7-226D<br />
+						Vancouver, BC, Canada, V6T1Z2
+					</li>
+					<li class="icon solid fa-phone">(236) 999-9216</li>
+					<li class="icon solid fa-envelope">haotian-li@outlook.com</li>
+					<li class="icon brands fa-github"><a
+							href="https://github.com/JasonLi-9933">https://github.com/JasonLi-9933</a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled Inc. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Made with ❤️ by Jason Li</li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
