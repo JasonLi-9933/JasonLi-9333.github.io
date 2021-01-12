@@ -36,7 +36,7 @@
 						The styling is supported by <span class="major">TailwindCSS</span>. <span class="major">Redux</span> is used as state manage system.
 						<span class="major">React Router</span> is incorporated to support the navigation.
 						Users can search for recipes based on the ingredient(s), signed-in users can archive recipes. The authentication process is very simple,
-						supported bu Google OAuth.(Only email will be accessed, not other information will be exposed). As there will be async API fetching and form submission,
+						supported bu Google OAuth.(Only email will be accessed, not other information will be collected). As there will be async API fetching and form submission,
 						middleware such as <span class="major">Redux Form</span>, <span class="major">Redux Thunk</span> are implemented.
 					</p>
 
@@ -63,8 +63,11 @@
 						satisfy with my API configuration, simply because I am not quite familiar with each of the status code, it was sufficient enough
 						to support this app. <br>
 						<br>
-						I definitely got more familiar with the Redux, to be honest this project gives me 'oh' moment regarding my understanding
-						of Redux. Which make me always think of Redux store first when dealing with states in React rather than the built-in state system.
+						I definitely got more familiar with the Redux, to be honest this project gives me many 'oh' moments, and each 
+						one of it makes me have a better understanding of Redux. I also learned that some time you cannot expect the state 
+						in redux store to be always correct. In this project, the user sign-in status is stored in redux store.
+						since it is a async operation, if the user reload the page the recipes they archived may not get displayed 
+						as there be a short period redux store think user is logged off, so I need to pass in the user ID by myself.
 
 					</p>
 
