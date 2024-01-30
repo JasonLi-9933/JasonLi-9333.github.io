@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/png" href="./images/favicon.png" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -32,51 +33,72 @@
 
 					<h3 class="major">Introduction</h3>
 					<p>
-                        This is the first MERN (<span class="major">MongoDB</span>, <span class="major">ExpressJS</span>, <span class="major">ReactJS</span>, <span class="major">NodeJS</span>) project I build from scratch.
-						The styling is supported by <span class="major">TailwindCSS</span>. <span class="major">Redux</span> is used as state manage system.
+						This is the first MERN (<span class="major">MongoDB</span>, <span
+							class="major">ExpressJS</span>, <span class="major">ReactJS</span>, <span
+							class="major">NodeJS</span>) project I build from scratch.
+						The styling is supported by <span class="major">TailwindCSS</span>. <span
+							class="major">Redux</span> is used as state manage system.
 						<span class="major">React Router</span> is incorporated to support the navigation.
-						Users can search for recipes based on the ingredient(s), signed-in users can archive recipes. The authentication process is very simple,
-						supported bu Google OAuth.(Only email will be accessed, not other information will be collected). As there will be async API fetching and form submission,
-						middleware such as <span class="major">Redux Form</span>, <span class="major">Redux Thunk</span> are implemented.
+						Users can search for recipes based on the ingredient(s), signed-in users can archive recipes.
+						The authentication process is very simple,
+						supported bu Google OAuth.(Only email will be accessed, not other information will be
+						collected). As there will be async API fetching and form submission,
+						middleware such as <span class="major">Redux Form</span>, <span class="major">Redux Thunk</span>
+						are implemented.
 					</p>
 
 					<h3 class="major">Spotlight</h3>
 					<p>
-						1. Maximized the code reusability by creating truly reusable components that are 100% configurable and 
-						   implemented across the App. <br>
-						   <br>
-						2. Even though I already mentioned this, but this is the first time I incorporate authentication into the project.
-						   So the web app is more real-like. <br>
-						   <br>
-						3. Actions like "archive recipe", "go to my archive" is only available when user is signed-in. I leveraged Redux to
-						   store the user sign-in status to make sure all components share the same information. <br>
-						   <br>
-						4. I imported the Plain Router instead of the Browser Router so that I can create my own history which can be accessed 
-						   anywhere in the project. So I can add page-switching logic in the Redux action creators.
+						1. Maximized the code reusability by creating truly reusable components that are 100%
+						configurable and
+						implemented across the App. <br>
+						<br>
+						2. Even though I already mentioned this, but this is the first time I incorporate authentication
+						into the project.
+						So the web app is more real-like. <br>
+						<br>
+						3. Actions like "archive recipe", "go to my archive" is only available when user is signed-in. I
+						leveraged Redux to
+						store the user sign-in status to make sure all components share the same information. <br>
+						<br>
+						4. I imported the Plain Router instead of the Browser Router so that I can create my own history
+						which can be accessed
+						anywhere in the project. So I can add page-switching logic in the Redux action creators.
 					</p>
 
 					<h3 class="major">Lessons Learned</h3>
 					<p>
-						This project pretty much covers all the things I have learned during the Winter Break. I know you probably
-						think using Redux, Redux Form .etc for this app is a overkill, but I consider it as a really good chance to summarize my learning. Plus, 
-						the project could be easily expend to something bigger, and then Redux would definitely come in handy. Although I am not super 
-						satisfy with my API configuration, simply because I am not quite familiar with each of the status code, it was sufficient enough
+						This project pretty much covers all the things I have learned during the Winter Break. I know
+						you probably
+						think using Redux, Redux Form .etc for this app is a overkill, but I consider it as a really
+						good chance to summarize my learning. Plus,
+						the project could be easily expend to something bigger, and then Redux would definitely come in
+						handy. Although I am not super
+						satisfy with my API configuration, simply because I am not quite familiar with each of the
+						status code, it was sufficient enough
 						to support this app. <br>
 						<br>
-						I definitely got more familiar with the Redux, to be honest this project gives me many 'oh' moments, and each 
-						one of it makes me have a better understanding of Redux. I also learned that some time you cannot expect the state 
-						in redux store to be always correct. In this project, the user sign-in status is stored in redux store.
-						since it is a async operation, if the user reload the page the recipes they archived may not get displayed 
-						as there be a short period redux store think user is logged off, so I need to pass in the user ID by myself.
+						I definitely got more familiar with the Redux, to be honest this project gives me many 'oh'
+						moments, and each
+						one of it makes me have a better understanding of Redux. I also learned that some time you
+						cannot expect the state
+						in redux store to be always correct. In this project, the user sign-in status is stored in redux
+						store.
+						since it is a async operation, if the user reload the page the recipes they archived may not get
+						displayed
+						as there be a short period redux store think user is logged off, so I need to pass in the user
+						ID by myself.
 
 					</p>
 
 					<h3 class="major">What's Next</h3>
 					<p>
-						1. User could have more control of how they want their search result be. The Redux Form I implemented would come in 
-						   handy.<br><br>
-						2. Increase the user experience by adding a pop-up modal when user archive/delete recipes. The function could be done by using 
-						   React Portals.
+						1. User could have more control of how they want their search result be. The Redux Form I
+						implemented would come in
+						handy.<br><br>
+						2. Increase the user experience by adding a pop-up modal when user archive/delete recipes. The
+						function could be done by using
+						React Portals.
 					</p>
 
 					<a class="special" href="./index.html">Go Back</a>
@@ -90,9 +112,7 @@
 			<div class="inner">
 				<ul class="contact">
 					<li class="icon solid fa-home">
-						2075 West Mall, Ponderosa Commons<br />
-						Unit 7-226D<br />
-						Vancouver, BC, Canada, V6T1Z2
+						Vancouver, BC, Canada
 					</li>
 					<li class="icon solid fa-phone">(236) 999-9216</li>
 					<li class="icon solid fa-envelope">haotian-li@outlook.com</li>
@@ -100,8 +120,6 @@
 							href="https://github.com/JasonLi-9933">https://github.com/JasonLi-9933</a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled Inc. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					<li>Made with ❤️ by Jason Li</li>
 				</ul>
 			</div>
